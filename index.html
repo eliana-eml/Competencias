@@ -10,69 +10,148 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <title>Cadastro - Cartão de Membro</title>
 </head>
 
 <body class="bg-light">
     <div class="container">
         <header>
-            <img class="col-12 col-lg-4" src="./img/logo.png" alt="Assembléia de Deus logotipo">
+            <img class="col-6 col-lg-2" src="./img/Logo_Belem.png" alt="Assembléia de Deus logotipo">
             <h2>Cadastro - Cartão de Membro</h2>
         </header>
         <main>
             <div>
                 <h4>Formulário de Cadastro</h4>
                 <form action="#" class="formulario">
-                    <div class="col-12 col-lg-8">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="" value="" required>
+                    <div class="col">
+                        <label for="congregacao" class="form-label"></label>
+                        <i class='bx bxs-church'></i>
+                        <input type="text" class="form-control" id="congregacao" placeholder="Congregação" value=""
+                            required>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <label for="sobrenome" class="form-label">Sobrenome</label>
-                        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="nome" class="form-label"></label>
+                            <i class='bx bxs-user-detail'></i>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" value="" required>
+                        </div>
+                        <div class="col">
+                            <i class='bx bxs-user-detail'></i>
+                            <label for="sobrenome" class="form-label"></label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" value=""
+                                required>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                    <div class="col">
+                        <label for="email" class="form-label"></label>
+                        <i class='bx bx-mail-send'></i>
+                        <input type="email" class="form-control" id="email" placeholder="Email: nome@exemplo.com"
+                            required>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <label for="endereco" class="form-label">Endereço</label>
-                        <input type="text" class="form-control" id="endereco" required>
+                    <div class="col">
+                        <label for="endereco" class="form-label"></label>
+                        <i class='bx bx-home-alt'></i>
+                        <input type="text" class="form-control" id="endereco" placeholder="Endereço" required>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <label for="rg" class="form-label">RG</label>
-                        <input type="text" class="form-control" id="rg" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="complemento" class="form-label"></label>
+                            <i class='bx bx-home-alt'></i>
+                            <input type="text" class="form-control" id="complemento" placeholder="Complemento" required>
+                        </div>
+                        <div class="col">
+                            <i class='bx bx-home-alt'></i>
+                            <label for="bairro" class="form-label"></label>
+                            <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                        </div>
+                        <div class="col">
+                            <label for="cep" class="form-label"></label>
+                            <i class='bx bx-home-alt'></i>
+                            <input type="number" class="form-control" id="cep" placeholder="CEP" required>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" class="form-control" id="cpf" required>
+                    <div class="row">
+                        <div class="col">
+                            <label for="rg" class="form-label"></label>
+                            <i class='bx bxs-user-detail'></i>
+                            <input type="text" class="form-control" id="rg" placeholder="RG" required>
+                        </div>
+                        <div class="col">
+                            <label for="cpf" class="form-label"></label>
+                            <i class='bx bxs-user-detail'></i>
+                            <input type="text" class="form-control" id="cpf" placeholder="CPF" required>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-8">
-                        <label for="telefone" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="telefone"
-                        placeholder="(11)0000-0000" required>
+                    <div class="row">
+                        <div class="col">
+                            <i class='bx bxs-user-circle'></i>
+                            <label for="estado_civil"></label>
+                            <select type="date" class="form-select" id="estado_civil">
+                                <option value="">Estado Cívil</option>
+                                <option value="1">Feminino</option>
+                                <option value="2">Masculino</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <label for="data">Data de nascimento</label>
-                        <input type="date" class="form-control" id="dt_nasc">
+                    <div class="row one">
+                        <div class="col">
+                            <label for="telefone" class="form-label"></label>
+                            <i class='bx bx-phone-call'></i>
+                            <input type="tel" class="form-control" id="telefone" placeholder="Tel (11) 0000-0000"
+                                required>
+                        </div>
+                        <div class="col">
+                            <label for="celular" class="form-label"></label>
+                            <i class='bx bx-mobile-vibration'></i>
+                            <input type="tel" class="form-control" id="celular" placeholder="Cel (11) 00000-0000"
+                                required>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <label for="sexo">Sexo</label>
-                        <select type="date" class="form-select" id="sexo">
-                            <option value="">Selecione . . .</option>
-                            <option value="">Feminino</option>
-                            <option value="">Masculino</option>
-                        </select>
+                    <div class="row">
+                        <div class="col">
+                            <label for="data"></label>
+                            <i class='bx bxs-cake'></i>
+                            <input type="date" class="form-control" id="dt_nasc" placeholder="Data de nascimento">
+                        </div>
+                        <div class="col">
+                            <i class='bx bxs-user-circle'></i>
+                            <label for="sexo"></label>
+                            <select type="date" class="form-select" id="sexo">
+                                <option value="">Sexo (selecione)</option>
+                                <option value="">Feminino</option>
+                                <option value="">Masculino</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <label for="dt_batismo_esp">Batismo no Espírito Santo</label>
-                        <input type="date" class="form-control" id="dt_batismo_esp">
+                    <div class="row">
+                        <div class="col">
+                            <div class="checkbox-inline">
+                                <i class='bx bxs-flame'></i>
+                                <label><input type="checkbox" value="1"> É batizado com o Espírito Santo?</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="checkbox-inline">
+                                <i class='bx bx-water'></i>
+                                <label><input type="checkbox" value="2"> É batizado nas águas?</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-3">
-                        <label for="dt_batismo_ag">Batismo nas águas</label>
-                        <input type="date" class="form-control" id="dt_batismo_ag">
+                    <div class="row">
+                        <div class="col">
+                            <label for="dt_batismo_esp">Batismo com Espírito Santo</label>
+                            <input type="date" class="form-control" id="dt_batismo_esp">
+                        </div>
+                        <div class="col">
+                            <label for="dt_batismo_ag">Batismo nas águas</label>
+                            <input type="date" class="form-control" id="dt_batismo_ag">
+                        </div>
                     </div>
-                    
+
+                    <button class="btn btn-warning" type="submit">Enviar</button>
+
+
                 </form>
             </div>
 
